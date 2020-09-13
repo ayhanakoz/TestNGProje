@@ -1,9 +1,11 @@
+package com.techproed.tests;
 
 import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
 import java.util.Set;
+
 public class WindowHandleTest extends TestBase {
     @Test
     public void cokluPencereTest(){
@@ -11,7 +13,7 @@ public class WindowHandleTest extends TestBase {
         String sayfaninHandle = driver.getWindowHandle();
         System.out.println(sayfaninHandle);
         driver.findElement(By.partialLinkText("Click Here")).click();
-       try {
+        try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -36,3 +38,5 @@ public class WindowHandleTest extends TestBase {
 
 
 }
+
+
